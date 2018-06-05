@@ -1,7 +1,8 @@
 config = require "../package.json"
+shelljs = require "shelljs"
 
 module.exports = (robot) =>
-  robot.hear /when/i, (res) ->
+  robot.hear /time/i, (res) ->
     res.send (new Date()).toISOString()
 
   robot.respond /version/i, (res) ->
@@ -9,3 +10,6 @@ module.exports = (robot) =>
 
   robot.hear /docker/i, (res) ->
     res.emote "something will happen"
+
+  robot.hear /date/i, (res) ->
+    res.reply shelljs.exec('cal', {silent:true}).stdout
