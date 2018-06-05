@@ -1,2 +1,2 @@
 up:
-  bin/hubot -a slack
+	bin/hubot -a slack
