@@ -12,7 +12,6 @@ then
 
 fi
 
-echo "$HUBOT_SLACK_TOKEN"
 export HUBOT_SLACK_TOKEN=$HUBOT_SLACK_TOKEN
 
 exec bin/hubot -a slack

@@ -3,3 +3,4 @@ log
 .DS_Store*
 .hubot_history
 .env
+config/app.server.json
