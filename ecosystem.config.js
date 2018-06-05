@@ -8,7 +8,10 @@ module.exports = {
     // First application
     {
       name      : 'robot',
-      script    : 'bin/hubot',
+      script    : './bin/hubot',
+      exec_interpreter: "bash",
+      exec_mode : "fork_mode",
+      watch: true,
       env: {
         COMMON_VARIABLE: 'true'
       },
