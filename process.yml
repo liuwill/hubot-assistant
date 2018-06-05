@@ -1,5 +1,5 @@
 apps:
-  - script : ./bin/hubot
+  - script : ./bin/hubot -a slack
     name: robot
     watch  : true
     exec_interpreter: bash

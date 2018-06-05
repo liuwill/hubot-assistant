@@ -8,7 +8,7 @@ module.exports = {
     // First application
     {
       name      : 'robot',
-      script    : './bin/hubot',
+      script    : './bin/hubot -a slack',
       exec_interpreter: "bash",
       exec_mode : "fork_mode",
       watch: true,
