@@ -8,7 +8,7 @@ module.exports = {
     // First application
     {
       name      : 'robot',
-      script    : './bin/hubot -a slack',
+      script    : './bin/hubot',
       exec_interpreter: "bash",
       exec_mode : "fork_mode",
       watch: true,
@@ -17,7 +17,10 @@ module.exports = {
       },
       env_production : {
         NODE_ENV: 'production'
-      }
+      },
+      args: [
+        "-a", "slack"
+      ]
     },
   ],
 };
