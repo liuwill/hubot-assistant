@@ -31,8 +31,9 @@ then
   else
     for line in `cat .env`
     do
-        config=(${line//,/ })
+        config=(${line//=/ })
         export ${config[0]}=${config[1]}
+
         #export HUBOT_SLACK_TOKEN=$HUBOT_SLACK_TOKEN
     done
   fi
