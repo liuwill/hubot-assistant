@@ -1,4 +1,7 @@
 module.exports = (robot) ->
+  robot.hear /hello/i, (res) ->
+    res.send "hello world? 😃"
+
   robot.respond /咒语/i, (res) ->
     robot.emit 'bearychat.attachment',
       # required
