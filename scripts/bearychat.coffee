@@ -1,7 +1,7 @@
 weatherApi = require "../lib/weather"
 
 module.exports = (robot) ->
-  robot.hear /weather:(\w+)/i, (res) ->
+  robot.hear /weather:(.+)/i, (res) ->
     city = res.match[1]
     url = weatherApi.buildQuery(city)
 
