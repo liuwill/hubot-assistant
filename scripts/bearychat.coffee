@@ -1,4 +1,14 @@
+weatherApi = require "../lib/weather"
+
 module.exports = (robot) ->
+  robot.hear /weather:(\w+)/i, (res) ->
+    city = res.match[1]
+    url = weatherApi.buildQuery(city)
+
+    robot.http(url).get() (err, response, body) ->
+      data = JSON.parse body
+      res.send weatherApi.filterWeatherText(data)
+
   robot.hear /hello/i, (res) ->
     res.send "hello world? 😃"
 
