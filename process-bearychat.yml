@@ -1,0 +1,11 @@
+apps:
+  - script : ./bin/hubot
+    name: robot
+    watch  : true
+    exec_interpreter: bash
+    exec_mode : fork_mode
+    env    :
+      NODE_ENV: development
+    env_production:
+      NODE_ENV: production
+    args: ['-a', 'bearychat']
