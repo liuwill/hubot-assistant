@@ -5,9 +5,9 @@ module.exports = (robot) ->
     city = res.match[1]
     url = weatherApi.buildQuery(city)
 
+    console.log(url)
     robot.http(url).get() (err, response, body) ->
-      data = JSON.parse body
-      res.send weatherApi.filterWeatherText(data)
+      res.send weatherApi.filterWeatherText(body)
 
   robot.hear /hello/i, (res) ->
     res.send "hello world? 😃"

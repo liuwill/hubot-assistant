@@ -4,4 +4,5 @@ log
 .hubot_history
 .env
 config/app.server.json
+config/app.production.json
 package-lock.json
