@@ -5,3 +5,6 @@ module.exports = (robot) ->
     if match
       res.send "I'm #{robot.name}. Sorry My Master,I do not know what you are saying"
     res.finish()
+
+  robot.respond /meta/i, (res) ->
+    res.reply "#{robot.name}:#{robot.alias}"
