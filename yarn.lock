@@ -179,10 +179,6 @@ cline@^0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/cline/-/cline-0.8.2.tgz#e911e741a0ad2e24d29e6fab2cf89fa322d59c76"
 
-coffee-script@1.12.7:
-  version "1.12.7"
-  resolved "https://registry.yarnpkg.com/coffee-script/-/coffee-script-1.12.7.tgz#c05dae0cb79591d05b3070a8433a98c9a89ccc53"
-
 coffee-script@1.6.3:
   version "1.6.3"
   resolved "https://registry.yarnpkg.com/coffee-script/-/coffee-script-1.6.3.tgz#6355d32cf1b04cdff6b484e5e711782b2f0c39be"
